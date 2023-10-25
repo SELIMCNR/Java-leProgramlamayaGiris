@@ -17,6 +17,7 @@ public class dataTypes {
            boolean dogruMu = true;
               byte sayi2 = -122;
               System.out.println(sayi+sayi2+""+karakter+dogruMu);
+          
               
     }
     

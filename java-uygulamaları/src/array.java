@@ -85,6 +85,14 @@ public class array {
                 }
             }   
         }
-        
+     
+        Double[] double1 = {5.5,4.5};
+        Double[] double2 = {7.5,9.5};
+
+        for(Double doub:double1){
+            for(Double doub2:double2){
+                System.out.println(doub*doub2);
+        }
     }
+}
 }

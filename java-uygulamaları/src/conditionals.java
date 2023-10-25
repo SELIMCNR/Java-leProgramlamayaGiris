@@ -26,6 +26,17 @@ public class conditionals {
         }
         System.out.println("En büyük sayı: "+enBuyuk);  
 
+      // İf else if  else
+      String ehliyet = "var";
+      if(ehliyet == "var"){
+        System.out.println("Ehliyetiniz var.");
+      }
+      else if(ehliyet == "yok"){
+        System.out.println("Ehliyetiniz yok.");
+      }
+      else{
+        System.out.println("Geçersiz ehliyet.");
+      }
       
         //Switch Case
         char grade = 'A';
