@@ -93,6 +93,20 @@ public class array {
             for(Double doub2:double2){
                 System.out.println(doub*doub2);
         }
+
+        String[] Yazılar = {"lorem 546","lorem 78","lorem86798"};
+        for(String y1:Yazılar){
+            if(y1 =="lorem 546"){
+                System.out.println(y1);
+            }
+            else if(y1=="lorem 78"){
+                System.out.println(y1);
+            }
+            else if(y1=="lorem86798"){
+                System.out.println(y1);
+            }
+        }
+
     }
 }
 }

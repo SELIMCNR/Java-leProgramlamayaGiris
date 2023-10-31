@@ -62,5 +62,18 @@ public class loops {
     
      }
 
+     char harf = 'A';
+
+    for(char a='Z'; harf<=a;harf++){
+     if(harf =='A'){
+      System.out.println("A harfi");
+     }
+     else if(harf =='B'){
+      System.out.println("B harfi");
+     }
+     else if(harf =='C'){
+      System.out.println("C harfi");
+     }
     }
+}
 }

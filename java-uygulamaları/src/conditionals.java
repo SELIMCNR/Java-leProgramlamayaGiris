@@ -37,7 +37,18 @@ public class conditionals {
       else{
         System.out.println("Geçersiz ehliyet.");
       }
-      
+
+      int OyunSkor = 35;
+      if(OyunSkor>20){
+        System.out.println("Oyun skorunuz 20'den büyüktür."+OyunSkor);
+      }
+
+      else if(OyunSkor>35 && OyunSkor<50){
+        System.out.println("Oyun skorunuz 35 ile 50 arasındadır."+OyunSkor);
+      }
+      else {
+        System.out.println("Skorunuz 50 den büyüktür."+OyunSkor);
+      }
         //Switch Case
         char grade = 'A';
 
@@ -53,7 +64,19 @@ public class conditionals {
                 break;
             case 'D':
                 System.out.println("Fena değil: Geçtiniz.");        
-            }   
+            }
+            
+        switch(OyunSkor){
+            case 25:
+                    System.out.println("Oyun skorunuz 25'tir .");
+                    break;
+            case 35:
+                    System.out.println("Oyun skorunuz 35'tir .");
+                    break;
+            default:
+                    System.out.println("Skorunuz bilinmiyor");
+                    break;                
+        }    
             
 
     }

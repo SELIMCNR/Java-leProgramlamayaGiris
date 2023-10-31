@@ -23,7 +23,29 @@ public class Strings {
             System.out.println(kelime);
         }
 
-        
+        String takım = "Şampiyon Fenerbahçe";
+        System.out.println(takım);
+        if(takım.length()==takım.length()){
+            System.out.println(takım.length());
+        }
+        else{
+            System.out.println("Yanlış");
+        }
+        if(takım.charAt(4)=='i'){
+            takım=takım.replace(" ","*");
+            System.out.println(takım);
+        }
+        else if(takım.charAt(5)=='y'){
+            takım=takım.substring(8,16);
+            System.out.println(takım);
+        }
+        else if(takım.startsWith("Ş")){
+            takım = String.valueOf(takım.lastIndexOf('e')) ;
+            System.out.println(takım);
+        }
+        else if(takım.indexOf("F")==10){
+            System.out.println(takım);
+        }
     }
     
 }
