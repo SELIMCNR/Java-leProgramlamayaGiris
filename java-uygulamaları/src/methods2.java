@@ -10,6 +10,7 @@ public class methods2 {
         System.out.println("Sehir ver"+sehirVer());
         int toplam = sums2(1,2,3,4,5);
         System.out.println("Değer dönüren args dizi metot"+toplam);
+        System.out.println("Harfler : "+harf('a','b','c','d','e'));
     }
 
     public static void add(){
@@ -34,5 +35,14 @@ public class methods2 {
             toplam+=sayi;
         }
         return toplam;
+    }
+
+    public static char harf(char...harfler){
+        char grade=' ';
+        for (char c : harfler) {
+           grade = c;
+        }
+        return grade;
+  
     }
 }

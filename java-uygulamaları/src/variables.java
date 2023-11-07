@@ -11,7 +11,8 @@ public class variables {
         String mesaj = "Öğrenci sayım ";
         System.out.println(mesaj + öğrenciSayısı);
       
-
+        byte  score=5;
+        System.out.println(score); 
      
         
         

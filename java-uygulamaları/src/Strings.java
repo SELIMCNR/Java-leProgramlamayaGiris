@@ -46,6 +46,14 @@ public class Strings {
         else if(takım.indexOf("F")==10){
             System.out.println(takım);
         }
+
+        String mesaj2 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.";
+        System.out.println(mesaj2.length());
+        System.out.println(mesaj2.indexOf('a'));
+        System.out.println(mesaj2.lastIndexOf('a'));
+        System.out.println(mesaj2.substring(0, 10));
+        System.out.println(mesaj2.replace(" ", "*"));
+        System.out.println(mesaj2.concat(" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam."));
     }
     
 }

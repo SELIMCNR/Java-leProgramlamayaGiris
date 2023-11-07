@@ -49,7 +49,42 @@ public class conditionals {
       else {
         System.out.println("Skorunuz 50 den büyüktür."+OyunSkor);
       }
+
+      int fiyat  = 75;
+      if(fiyat>100){ 
+        if(fiyat>100 || fiyat<200){
+          System.out.println("İndirimli fiyat: "+fiyat*0.7);
+        }
+        else if(fiyat>200 || fiyat<300){
+          System.out.println("İndirimli fiyat: "+fiyat*0.8);
+        }
+        else{
+          System.out.println("İndirimli fiyat: "+fiyat*0.95);
+        }
+      }
+      else if(fiyat<100){
+        if(fiyat>50 || fiyat<100){
+          System.out.println("İndirimli fiyat: "+fiyat*0.5);
+        }
+        else{
+          System.out.println("İndirimli fiyat: "+fiyat*0.2);
+        }
+      }
+
         //Switch Case
+        fiyat = 25;
+        switch(fiyat){
+          case 125:
+          System.out.println("İndirimli fiyat: "+fiyat*0.7);
+          break;
+          case 50:
+            System.out.println("İndirimli fiyat: "+fiyat*0.5);
+            break;
+          case 25:
+            System.out.println("İndirimli fiyat: "+fiyat*0.2);
+            break;  
+        }
+
         char grade = 'A';
 
         switch(grade){

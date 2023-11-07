@@ -18,7 +18,10 @@ public class dataTypes {
               byte sayi2 = -122;
               System.out.println(sayi+sayi2+""+karakter+dogruMu);
 
-             
+             char c = 'c';
+             short  num = 45;
+             float nums = 45.8f;
+             System.out.println(c+num+nums);  
           
               
     }

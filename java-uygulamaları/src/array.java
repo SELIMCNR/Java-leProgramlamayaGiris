@@ -107,6 +107,20 @@ public class array {
             }
         }
 
+        int[] Fiyat = {10,20,30,40,50,60,70,80,90,100};
+        for (int price:Fiyat) 
+        {
+            if(price<25){
+                System.out.println(price*0.2);
+            }
+            else if(price>25 || price<50){
+                System.out.println(price*0.5);
+            }
+            else if(price>50 || price<100){
+                System.out.println(price*0.7);
+            }
+        }
+
     }
 }
 }

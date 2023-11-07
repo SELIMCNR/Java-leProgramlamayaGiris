@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class uygulama {
 
     public static void main(String[] args){
@@ -99,6 +101,34 @@ public class uygulama {
         }
         else{
             System.out.println("Sayı mevcut değildir.");
+        }
+
+
+
+
+        //HesapMakinesi dışardan değer girişli yada dizi de değer kullanarak hesaplama yapılabilir.
+        int[] nums = new int[]{10,20,30,40,50};
+        Scanner input = new Scanner(System.in);
+         System.out.println("ilk sayısını giriniz : ");
+        nums[0] = input.nextInt();
+        System.out.println("ikinci sayısını giriniz : ");
+        nums[1] = input.nextInt();
+        char operation = '+';
+        if(operation == '+'){
+            int toplam = nums[0] + nums[1];
+            System.out.println("Toplam : " + toplam);
+        }
+        if(operation == '-'){
+            int fark = nums[0] - nums[1];
+            System.out.println("Fark : " + fark);
+        }
+        if(operation == '*'){
+            int carpim = nums[0] * nums[1];
+            System.out.println("Çarpım : " + carpim);
+        }
+        if(operation == '/'){
+            int bolum = nums[0] / nums[1];
+            System.out.println("Bölüm : " + bolum);
         }
         
     }

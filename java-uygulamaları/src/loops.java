@@ -75,5 +75,15 @@ public class loops {
       System.out.println("C harfi");
      }
     }
+
+    int fiyat =0;
+    for (fiyat=1;fiyat<100;fiyat++){
+       if(fiyat <25 || fiyat<50){
+          System.out.println("İndirimli fiyat: "+fiyat*0.2);
+       }
+       else if(fiyat>50 || fiyat<100){
+        System.out.println("İndirimli fiyat: "+fiyat*0.5);
+       }
+    }
 }
 }
