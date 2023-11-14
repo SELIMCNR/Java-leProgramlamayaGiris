@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class uygulama {
@@ -131,5 +132,28 @@ public class uygulama {
             System.out.println("Bölüm : " + bolum);
         }
         
+    
+
+    // rastgele sayı bulma oyunu
+    Random rd = new Random();
+    int number20 = rd.nextInt(100);
+    int selected;
+    Scanner input2 = new Scanner(System.in);
+    System.out.println("Sayi tahmini yapınız :");
+    selected = input2.nextInt();
+        
+    if(selected == number20){
+        System.out.println("Tebrikler doğru bildiniz.");
     }
+    else if(selected < number20){
+        System.out.println("Daha büyük bir sayı giriniz.");
+    }
+    else if(selected > number20){
+        System.out.println("Daha küçük bir sayı giriniz.");
+    }
+    else{
+        System.out.println("Geçersiz sayı girdiniz.");
+    }
+
+}
 }

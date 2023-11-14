@@ -53,7 +53,8 @@ public class Strings {
         System.out.println(mesaj2.lastIndexOf('a'));
         System.out.println(mesaj2.substring(0, 10));
         System.out.println(mesaj2.replace(" ", "*"));
-        System.out.println(mesaj2.concat(" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam."));
+        System.out.println(mesaj2.concat("Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam."));
+    
     }
     
 }

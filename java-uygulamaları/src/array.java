@@ -121,6 +121,18 @@ public class array {
             }
         }
 
+
+        int[] notlar = {50,60,70,80,90,100};
+        int ortalama = 0;
+        for (int not : notlar){
+            if(not ==notlar[5]){
+                      ortalama = (notlar[0]+notlar[1]+notlar[2]+notlar[3]+notlar[4]+notlar[5])/notlar.length;
+            System.out.println(ortalama);
+            
+            }
+          
+        }
+
     }
 }
 }

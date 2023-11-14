@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class methods2 {
     public static void main(String[] args){
         String mesaj = "Bugün hava çok güzel";
@@ -11,6 +13,8 @@ public class methods2 {
         int toplam = sums2(1,2,3,4,5);
         System.out.println("Değer dönüren args dizi metot"+toplam);
         System.out.println("Harfler : "+harf('a','b','c','d','e'));
+
+        rastgeleSayi(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25);
     }
 
     public static void add(){
@@ -44,5 +48,16 @@ public class methods2 {
         }
         return grade;
   
+    }
+
+    public static void rastgeleSayi (int...sayilar){
+        Random rd = new Random();
+       
+        for (int i : sayilar) {
+            int rastgeleSayi ;
+            rastgeleSayi = rd.nextInt(i);
+            System.out.println("Rastgele sayi : "+rastgeleSayi);
+        }
+      
     }
 }

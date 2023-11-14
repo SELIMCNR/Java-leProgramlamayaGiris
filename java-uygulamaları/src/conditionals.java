@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class conditionals {
     
     public static void main(String[] args){
@@ -69,6 +71,41 @@ public class conditionals {
         else{
           System.out.println("İndirimli fiyat: "+fiyat*0.2);
         }
+      }
+
+        Random rd = new Random();
+        var tutulansayi = rd.nextInt(100);
+        var tahmin = rd.nextInt(100);
+      String tutabildi = "evet";
+      if(tutabildi == "evet"){
+      
+          rd = new Random();
+        tutulansayi = rd.nextInt(20);
+        tahmin = rd.nextInt(20);
+        System.out.println(tutulansayi+" "+tahmin);
+        if(tutulansayi == tahmin){
+          System.out.println("Tebrikler tutturdunuz.");
+        }
+        else{
+          System.out.println("Tutturamadınız.");
+        }
+      }
+      else {
+        tutabildi = "hayır";
+      }
+
+      switch(tutabildi){
+        case "evet":
+                         tutulansayi = rd.nextInt(10);
+                         tahmin = rd.nextInt(10);
+                          System.out.println(tutulansayi+" "+tahmin);
+                          var sonuc = tutulansayi == tahmin ? "Tebrikler tutturdunuz." : "Tutturamadınız.";
+                          System.out.println(sonuc);
+                          break;
+                    
+        case "hayır":
+          System.out.println("Tutturamadınız.");
+          break;
       }
 
         //Switch Case

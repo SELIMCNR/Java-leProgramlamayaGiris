@@ -23,6 +23,9 @@ public class dataTypes {
              float nums = 45.8f;
              System.out.println(c+num+nums);  
           
+             long s = 848484;
+             double d = 45.8;
+             System.out.println(s+d);
               
     }
     

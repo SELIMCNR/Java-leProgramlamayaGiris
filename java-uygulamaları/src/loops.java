@@ -85,5 +85,65 @@ public class loops {
         System.out.println("İndirimli fiyat: "+fiyat*0.5);
        }
     }
+
+    int dogru =0;
+    int yanlis = 0;
+    int ortalama = 0;
+    int sorusayısı = 0;
+    String cevapA = "A";
+    String cevapB = "B";
+    String cevapC = "C";
+    String cevapD = "D";
+    String cevap1 ="A";
+
+    for(sorusayısı=0;sorusayısı<4;sorusayısı++){
+      if(sorusayısı==1){
+        System.out.println("Soru 1 : A");
+        if(cevap1 == cevapA){
+          dogru++;
+        }
+        else if(cevap1 == cevapB || cevap1 == cevapC || cevap1 == cevapD){
+          yanlis++;
+        }
+        else{
+          System.out.println("Soru 1 : "+cevap1);
+        }
+      }
+      else if(sorusayısı==2){
+        cevap1="B";
+        System.out.println("Soru 2 : B");
+        if(cevap1 == cevapB){
+          dogru++;
+        }
+        else if(cevap1 == cevapA || cevap1 == cevapC || cevap1 == cevapD){
+          yanlis++;
+        }
+        else{
+          System.out.println("Soru 1 : "+cevap1);
+        }
+      }
+ else if(sorusayısı==3){
+        cevap1="C";
+        System.out.println("Soru 2 : C");
+        if(cevap1 == cevapC){
+          dogru++;
+        }
+        else if(cevap1 == cevapB || cevap1 == cevapC || cevap1 == cevapD){
+          yanlis++;
+        }
+        else{
+          System.out.println("Soru 1 : "+cevap1);
+        }
+      }
+
+      else{
+        System.out.println("Soru sayısı : "+sorusayısı);
+      }
+      System.out.println("Doğru sayısı : "+dogru);
+      System.out.println("Yanlış sayısı : "+yanlis);
+      ortalama = dogru-yanlis;
+      System.out.println("Ortalama : "+ortalama*100/3);
+    }
+
 }
 }

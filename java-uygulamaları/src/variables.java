@@ -13,7 +13,7 @@ public class variables {
       
         byte  score=5;
         System.out.println(score); 
-     
+        
         
         
 
